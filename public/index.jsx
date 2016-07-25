@@ -28,16 +28,6 @@ var AlphabeticIndex = React.createClass({
   }
 });
 
-var DataRow = React.createClass({
-  render: function(){
-    return(
-      <tr>
-        <td>Love</td>
-      </tr>
-    );
-  }
-});
-
 var SearchResultsHeaders = React.createClass({
   
   render: function(){
