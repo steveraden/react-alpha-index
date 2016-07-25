@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>React Tutorial</title>
+  <!-- Not present in the tutorial. Just for basic styling. -->
+  <!--<link rel="stylesheet" href="css/base.css" />-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.1/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.16/browser.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+  <style>
+    .jumbotron {
+      background-color: #BFDCDC;
+    }
+    
+    .letter {
+      font-size: 32px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <nav class="nav">
+        <h1>React Alphabetical Index</h1>
+      </nav>
+      <div class="row">
+        <div class="col-md-8">
+        
+          <p>This site is a demonstration of <a href="https://github.com/sturad/wesbster-signatures">react-alphabetic-index</a> an open source alphabetic index project created in React.js. Click any letter to trigger an AJAX query with that letter as a parameter. Responses are then rendered in a data grid. This project also utilized Sinatra, Postgresql Heroku for a simple API. Bootstrap is utilized to a passable look and feel. The data set is the Webster Signature database. More information on that project is available at the right.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-block">
+              <h2 class="card-title">
+              <a data-toggle="collapse" href="#webster-card-content">About the Webster Signature Database
+              </a></h2>
+              <div id="webster-card-content" class="collapse">
+                <p class="card-text" id="webster-text">This demo utilizes the Webster Institute's public database of the signature of a astronomy instruments in various collections world-wide.To learn more about the database or the database, please visit the following links.</p>
+                <ul>
+                  <li><a href="http://www.adlerplanetarium.org/collections/" target="_blank">Webster Institute</a></li>
+                  <li><a href="http://historydb.adlerplanetarium.org/signatures/" target="_blank">Webster Signature Database</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- yields to React.js component" -->
+     <h3>
+    Click any letter to search for signatures in that letter</h3>
+    <div id="content"></div>
+  </div>
+  <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  <script type="text/babel" src="./index.jsx"></script>
+</body>
+
+</html>
